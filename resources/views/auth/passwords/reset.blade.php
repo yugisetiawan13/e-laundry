@@ -6,9 +6,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
-    <meta name="description" content="E-Laundy aplikasi laundry berbasis website">
-    <meta name="keywords" content="E-Laundry,Laundry">
-    <meta name="author" content="Andri Desmana">
+    <meta name="description" content="Mama Laundry aplikasi laundry berbasis website">
+    <meta name="keywords" content="Mama Laundry,Laundry">
+    <meta name="author" content="Mirna Wati">
     <title>Reset Password</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
@@ -52,7 +52,7 @@
                         <div class="card mb-0">
                             <div class="card-body">
                                 <a href="javascript:void(0);" class="brand-logo">
-                                    <h2 class="brand-text text-primary ml-1">E-Laundry</h2>
+                                    <h2 class="brand-text text-primary ml-1">Mama Laundry</h2>
                                 </a>
 
                                 <h4 class="card-title mb-1">Reset Password 🔒</h4>

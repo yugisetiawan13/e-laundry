@@ -82,7 +82,7 @@
   <!-- Dokumentasi ends -->
 
   <!-- contact me -->
-  <section class="faq-contact">
+  {{-- <section class="faq-contact">
       <div class="row mt-2 pt-75">
           <div class="col-12 text-center">
               <h2>Punya Pertanyaan ?</h2>
@@ -95,7 +95,7 @@
                       <div class="avatar avatar-tag bg-light-primary mb-2 mx-auto">
                           <i class="font-medium-3 feather icon-message-circle"></i>
                       </div>
-                      <h4><a href="https://t.me/andridesmana">Telegram</a></h4>
+                      <h4><a href="javascript:void()">Telegram</a></h4>
                       <span class="text-body">Best way to get answer faster!</span>
                   </div>
               </div>
@@ -112,6 +112,6 @@
               </div>
           </div>
       </div>
-  </section>
+  </section> --}}
   <!--/ contact me -->
 @endsection

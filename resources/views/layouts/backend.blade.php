@@ -6,9 +6,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="E-Laundy aplikasi laundry berbasis website">
-    <meta name="keywords" content="E-Laundry,Laundry">
-    <meta name="author" content="Andri Desmana">
+    <meta name="description" content="Mama Laundry aplikasi laundry berbasis website">
+    <meta name="keywords" content="Mama Laundry,Laundry">
+    <meta name="author" content="Mirna Wati">
     <title>@yield('title')</title>
     <link rel="apple-touch-icon" href="{{asset('backend/images/ico/apple-icon-120.png')}}">
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('backend/images/ico/favicon.ico')}}">
@@ -157,7 +157,7 @@
                                 <a href="{{route('karyawan.index')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="View">Karyawan</span></a>
                               </li>
                               <li class="nav-item {{ (request()->is('customer')) ? 'active' : '' }}">
-                                <a href="{{url('customer')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">Customer</span></a>
+                                <a href="{{url('customer')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">Pelanggan</span></a>
                               </li>
                             </ul>
                         </li>
@@ -167,10 +167,10 @@
                         </li>
 
 
-                        <li class=" nav-item"><a href="#"><i class="feather icon-credit-card"></i><span class="menu-title" data-i18n="User">Data Finance</span></a>
+                        <li class=" nav-item"><a href="#"><i class="feather icon-credit-card"></i><span class="menu-title" data-i18n="User">Data Keuangan</span></a>
                           <ul class="menu-content">
                             <li class="nav-item {{ (request()->is('finance')) ? 'active' : '' }}">
-                              <a href="{{route('finance.index')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">Finance</span></a>
+                              <a href="{{route('finance.index')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">Keuangan</span></a>
                             </li>
                             <li class="nav-item {{ (request()->is('data-harga')) ? 'active' : '' }}">
                               <a href="{{url('data-harga')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">Harga Laundry</span></a>
@@ -186,9 +186,9 @@
                           </ul>
                         </li>
 
-                        <li class="nav-item {{ (request()->is('dokumentasi')) ? 'active' : '' }}">
+                        {{-- <li class="nav-item {{ (request()->is('dokumentasi')) ? 'active' : '' }}">
                           <a href="{{url('dokumentasi')}}"><i class="feather icon-folder"></i><span class="menu-item" data-i18n="List">Dokumentasi</span></a>
-                        </li>
+                        </li> --}}
                     {{-- End Menu Admin --}}
 
                     {{-- Menu Karyawan --}}
@@ -202,19 +202,19 @@
                                 <a href="{{url('add-order')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">Tambah Order</span></a>
                               </li>
                               <li class="nav-item {{ (request()->is('customers')) ? 'active' : '' }}">
-                                <a href="{{url('customers')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">Data Customer</span></a>
+                                <a href="{{url('customers')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">Data Pelanggan</span></a>
                               </li>
                           </ul>
                       </li>
                       <li class="nav-item"><a href="{{url('/laporan')}}"><i class="feather icon-file-text"></i><span class="menu-title" data-i18n="Dashboard">Laporan</span></a>
                       </li>
-                      <li class="nav-item"><a href="{{url('/')}}" target="_blank"><i class="feather icon-square"></i><span class="menu-title" data-i18n="Dashboard">Frontend</span></a>
+                      <li class="nav-item"><a href="{{url('/')}}" target="_blank"><i class="feather icon-square"></i><span class="menu-title" data-i18n="Dashboard">Cek Status</span></a>
                       </li>
 
                     {{-- Menu Customer --}}
                     @elseif(Auth::user()->auth == 'Customer')
 
-                      <li class="nav-item"><a href="{{url('/')}}" target="_blank"><i class="feather icon-square"></i><span class="menu-title" data-i18n="Dashboard">Frontend</span></a>
+                      <li class="nav-item"><a href="{{url('/')}}" target="_blank"><i class="feather icon-square"></i><span class="menu-title" data-i18n="Dashboard">Cek Status</span></a>
                       </li>
                     @endif
                 {{--End  --}}
@@ -244,7 +244,7 @@
 
     <!-- BEGIN: Footer-->
     <footer class="footer footer-static footer-light">
-        <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2020 - {{date('Y')}}<a class="text-bold-800 grey darken-2" href="https://andridesmana.space" target="_blank">Andri Desmana,</a>All rights Reserved</span><span class="float-md-right d-none d-md-block">Build With <i class="feather icon-heart pink"></i></span>
+        <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2023 - {{date('Y')}}<a class="text-bold-800 grey darken-2" href="javascript:void()" target="_blank">Mirna Wati,</a>All rights Reserved</span><span class="float-md-right d-none d-md-block">Build With <i class="feather icon-heart pink"></i></span>
             <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="feather icon-arrow-up"></i></button>
         </p>
     </footer>

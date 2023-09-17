@@ -311,7 +311,7 @@ a:focus {
     right: 0;
     bottom: 0;
     overflow: hidden;
-    height: 300px !important;
+    /* height: 300px !important; */
 }
 .has-bg .bg-cover:before {
     content: '';

@@ -3,7 +3,7 @@
     <div class="panel panel-forum">
       <div class="justify-content-start">
         <div class="col-md-6">
-          <img :src="'frontend/img/suply.png'" style="width: 100%; max-height:400px; min-height:400px" alt="">
+          <img :src="'frontend/img/suply.png'" style="width: 100%; min-height:400px" alt="">
         </div>
         <div class="col-md-6" style="max-height:400px; min-height:400px;">
         <div class="" style="margin-top: 20%">

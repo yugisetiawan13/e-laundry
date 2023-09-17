@@ -48,7 +48,7 @@
     </div>
   </section>
   <!-- contact me -->
-  <section class="faq-contact">
+  {{-- <section class="faq-contact">
       <div class="row mt-2 pt-75">
           <div class="col-12 text-center">
               <h2>Punya Pertanyaan ?</h2>
@@ -78,6 +78,6 @@
               </div>
           </div>
       </div>
-  </section>
+  </section> --}}
   <!--/ contact me -->
 @endsection

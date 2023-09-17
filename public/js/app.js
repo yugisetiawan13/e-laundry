@@ -37220,7 +37220,7 @@ var render = function() {
             _c("img", {
               staticStyle: {
                 width: "100%",
-                "max-height": "400px",
+                // "max-height": "400px",
                 "min-height": "400px"
               },
               attrs: { src: "frontend/img/suply.png", alt: "" }

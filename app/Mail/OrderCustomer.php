@@ -30,7 +30,7 @@ class OrderCustomer extends Mailable
     public function build()
     {
         $address = config("mail.from.address");
-        $name = 'E-Laundry';
+        $name = 'Mama Laundry';
 
         return $this->view('emails.orders')
         ->subject('Laundry Order')

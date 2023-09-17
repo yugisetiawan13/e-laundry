@@ -281,7 +281,7 @@
 
                 {{-- Panel Notifications --}}
                 <div class="tab-pane fade" id="vertical-notif" role="tabpanel" aria-labelledby="pill-notif" aria-expanded="false">
-                  <div class="alert alert-danger">Baca Dokumentasi untuk mempermudah integrasi dan penggunaan Notifikasi pada halaman <b>Dokumentasi.</b></div>
+                  {{-- <div class="alert alert-danger">Baca Dokumentasi untuk mempermudah integrasi dan penggunaan Notifikasi pada halaman <b>Dokumentasi.</b></div> --}}
                   <form action="{{route('set-notif.update', Auth::id())}}" method="post">
                     @csrf
                     @method('PUT')
@@ -295,7 +295,7 @@
                           </div>
                         </div>
 
-                        <h5 class="m-1">Telegram Order Masuk</h5>
+                        {{-- <h5 class="m-1">Telegram Order Masuk</h5>
                         <div class="col-12 mb-1">
                           <div class="custom-control custom-switch custom-control-inline">
                               <input type="checkbox" class="custom-control-input" name="telegram_order_masuk" {{$setnotif->telegram_order_masuk == 1 ? 'checked' : '0'}} value="1" id="telegram_order_masuk">
@@ -303,18 +303,18 @@
                               <span class="switch-label w-100">Aktifkan Jika Ingin Mendapatkan Notifikasi Setiap Order Masuk</span>
                           </div>
 
-                        </div>
+                        </div> --}}
 
-                        <h5 class="m-1">Telegram Order Keluar</h5>
+                        {{-- <h5 class="m-1">Telegram Order Keluar</h5>
                         <div class="col-12 mb-1">
                           <div class="custom-control custom-switch custom-control-inline">
                               <input type="checkbox" class="custom-control-input" name="telegram_order_selesai" {{$setnotif->telegram_order_selesai == 1 ? 'checked' : '0'}} value="1" id="telegram_order_selesai">
                               <label class="custom-control-label mr-1" for="telegram_order_selesai"></label>
                               <span class="switch-label w-100">Aktifkan Jika Ingin Mendapatkan Notifikasi Setiap Order Selesai</span>
                           </div>
-                        </div>
+                        </div> --}}
 
-                        <h5 class="m-1">Channel Telegram</h5>
+                        {{-- <h5 class="m-1">Channel Telegram</h5>
                         <div class="col-md-12 mb-1">
                            <div class="form-group">
                               <input type="text" name="telegram_channel_masuk" class="form-control" placeholder="Masukan Nama Channel Telegram" value=" {{$setnotif->telegram_channel_masuk}} ">
@@ -324,18 +324,18 @@
                                 @endif
                                @endif
                           </div>
-                        </div>
+                        </div> --}}
 
-                        <h5 class="m-1">WhatsApp Order Selesai</h5>
+                        {{-- <h5 class="m-1">WhatsApp Order Selesai</h5>
                         <div class="col-12 mb-1">
                           <div class="custom-control custom-switch custom-control-inline">
                               <input type="checkbox" class="custom-control-input" name="wa_order_selesai" {{$setnotif->wa_order_selesai == 1 ? 'checked' : '0'}} value="1" id="wa_order_selesai">
                               <label class="custom-control-label mr-1" for="wa_order_selesai"></label>
                               <span class="switch-label w-100">Aktifkan Jika Ingin Mengirimkan Notifikasi Setiap Order Selesai Kepada Customer</span>
                           </div>
-                        </div>
+                        </div> --}}
 
-                        <h5 class="m-1">Token WhatsApp API</h5>
+                        {{-- <h5 class="m-1">Token WhatsApp API</h5>
                         <div class="col-md-12 mb-1">
                            <div class="form-group">
                               <input type="text" name="wa_token" class="form-control" placeholder="Masukan Token API" value="{{$setnotif->wa_token}}">
@@ -345,7 +345,7 @@
                                 @endif
                                @endif
                           </div>
-                        </div>
+                        </div> --}}
 
                         <div class="col-12 d-flex flex-sm-row flex-column justify-content-start">
                           <button type="submit" class="btn btn-primary mr-sm-1 mb-1 mb-sm-0">Save changes</button>
