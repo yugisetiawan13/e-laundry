@@ -67,12 +67,6 @@
                 "issues": "https://github.com/andes2912/indobank/issues",
                 "source": "https://github.com/andes2912/indobank/tree/0.7"
             },
-            "funding": [
-                {
-                    "url": "https://saweria.co/andes2912",
-                    "type": "custom"
-                }
-            ],
             "time": "2022-06-09T03:32:27+00:00"
         },
         {
