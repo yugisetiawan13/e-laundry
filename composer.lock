@@ -47,12 +47,6 @@
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "Andri Desmana",
-                    "email": "andridesmana29@gmail.com"
-                }
-            ],
             "description": "List Bank of Indonesian",
             "homepage": "https://andridesmana.pw/",
             "keywords": [
