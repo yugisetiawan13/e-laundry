@@ -56,7 +56,7 @@
                               <form action="{{ route('karyawan.destroy',$item->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <a class="btn btn-sm btn-{{$item->status == 'Active' ? 'primary' : 'danger'}}" data-id-update="{{$item->id}}" id="updateStatus">{{$item->status == 'Active' ? 'Non-Aktifkan' : 'Aktifkan'}}</a>
+                                <a class="btn btn-sm text-white btn-{{$item->status == 'Active' ? 'primary' : 'danger'}}" data-id-update="{{$item->id}}" id="updateStatus">{{$item->status == 'Active' ? 'Non-Aktifkan' : 'Aktifkan'}}</a>
                               </form>
                             </td>
                         </tr>

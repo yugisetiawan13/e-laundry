@@ -10,62 +10,66 @@
         </div>
         <div class="card-content">
             <div class="row">
-              <div class="card-body">
-                <div class="card-text">
-                    <dl class="row">
-                        <dt class="col-sm-4">Nama Customer</dt>
-                        <dd class="col-sm-4">: {{$customer->name}}</dd>
-                    </dl>
-
-                    <dl class="row">
-                        <dt class="col-sm-4">Email Customer</dt>
-                        <dd class="col-sm-4">: {{$customer->email}}</dd>
-                    </dl>
-
-                    <dl class="row">
-                        <dt class="col-sm-4">No. Telepon</dt>
-                        <dd class="col-sm-4">: {{$customer->no_telp == 0 ? 'Belum Input' : $customer->no_telp}}</dd>
-                    </dl>
-
-                    <dl class="row">
-                        <dt class="col-sm-4">Alamat Customer</dt>
-                        <dd class="col-sm-4">: {{$customer->alamat}}</dd>
-                    </dl>
-
-                    <dl class="row">
-                        <dt class="col-sm-4">Kelamin Customer</dt>
-                        <dd class="col-sm-4">: {{$customer->kelamin == 'L' ? 'Laki-laki' : 'Perempuan'}}</dd>
-                    </dl>
-
+                <div class="col-md-6">
+                    <div class="card-body">
+                      <div class="card-text">
+                          <dl class="row">
+                              <dt class="col-sm-4">Nama Customer</dt>
+                              <dd class="col-sm-8">: {{$customer->name}}</dd>
+                          </dl>
+      
+                          <dl class="row">
+                              <dt class="col-sm-4">Email Customer</dt>
+                              <dd class="col-sm-8">: {{$customer->email}}</dd>
+                          </dl>
+      
+                          <dl class="row">
+                              <dt class="col-sm-4">No. Telepon</dt>
+                              <dd class="col-sm-8">: {{$customer->no_telp == 0 ? 'Belum Input' : $customer->no_telp}}</dd>
+                          </dl>
+      
+                          <dl class="row">
+                              <dt class="col-sm-4">Alamat Customer</dt>
+                              <dd class="col-sm-8">: {{$customer->alamat}}</dd>
+                          </dl>
+      
+                          <dl class="row">
+                              <dt class="col-sm-4">Kelamin Customer</dt>
+                              <dd class="col-sm-8">: {{$customer->kelamin == 'L' ? 'Laki-laki' : 'Perempuan'}}</dd>
+                          </dl>
+      
+                      </div>
+                  </div>
                 </div>
-            </div>
-            <div class="card-body">
-                <div class="card-text">
-                    <dl class="row">
-                        <dt class="col-sm-4">Total Kg</dt>
-                        <dd class="col-sm-4">: {{$customer->transaksiCustomer()->sum('kg') ?? ''}} Kg</dd>
-                    </dl>
-
-                    <dl class="row">
-                        <dt class="col-sm-4">Total Rupiah</dt>
-                        <dd class="col-sm-4">: {{Rupiah::getRupiah($customer->transaksiCustomer()->sum('harga_akhir')) ?? ''}}</dd>
-                    </dl>
-
-                    <dl class="row">
-                        <dt class="col-sm-4">Total Laundry</dt>
-                        <dd class="col-sm-4">: {{$customer->transaksiCustomer()->count() ?? ''}} Kali</dd>
-                    </dl>
-
-                    <dl class="row">
-                        <dt class="col-sm-4">Laundry Terakhir</dt>
-                        <dd class="col-sm-4">: {{$customer->transaksiCustomer[0]['created_at'] ?? '-'}}</dd>
-                    </dl>
-                    <dl class="row">
-                        <dt class="col-sm-4">Pendaftaran Akun</dt>
-                        <dd class="col-sm-4">: {{$customer->created_at}}</dd>
-                    </dl>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <dl class="row">
+                                <dt class="col-sm-4">Total Kg</dt>
+                                <dd class="col-sm-8">: {{$customer->transaksiCustomer()->sum('kg') ?? ''}} Kg</dd>
+                            </dl>
+        
+                            <dl class="row">
+                                <dt class="col-sm-4">Total Rupiah</dt>
+                                <dd class="col-sm-8">: {{Rupiah::getRupiah($customer->transaksiCustomer()->sum('harga_akhir')) ?? ''}}</dd>
+                            </dl>
+        
+                            <dl class="row">
+                                <dt class="col-sm-4">Total Laundry</dt>
+                                <dd class="col-sm-8">: {{$customer->transaksiCustomer()->count() ?? ''}} Kali</dd>
+                            </dl>
+        
+                            <dl class="row">
+                                <dt class="col-sm-4">Laundry Terakhir</dt>
+                                <dd class="col-sm-8">: {{$customer->transaksiCustomer[0]['created_at'] ?? '-'}}</dd>
+                            </dl>
+                            <dl class="row">
+                                <dt class="col-sm-4">Pendaftaran Akun</dt>
+                                <dd class="col-sm-8">: {{$customer->created_at}}</dd>
+                            </dl>
+                        </div>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
