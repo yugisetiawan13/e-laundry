@@ -71,13 +71,7 @@
                 </div>
             </div>
             <div class="col-md-12">
-                <div class="pull-left m-t-10">
-                    <h6 class="text-right" style="font-weight:bold">Dengan Menandatangani/Menerima Nota Ini, Berarti Anda Setuju :</h6>
-                    <p>
-                        1. Isi Deskripsi <br>
-                        2. Isi Deskripsi
-                    </p>
-                </div>
+                
                 <div class="pull-right m-t-10 text-right">
                     <p>Total : {{Rupiah::getRupiah($hitung)}}</p>
                     <p>Disc @if ($item->disc == "")
