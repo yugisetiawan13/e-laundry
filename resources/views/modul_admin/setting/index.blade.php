@@ -33,12 +33,12 @@
               </a>
           </li>
 
-          <li class="nav-item">
+          {{-- <li class="nav-item">
               <a class="nav-link d-flex py-75" id="pill-theme" data-toggle="pill" href="#vertical-theme" aria-expanded="false">
                   <i class="feather icon-feather mr-50 font-medium-3"></i>
                   Theme
               </a>
-          </li>
+          </li> --}}
 
           <li class="nav-item">
               <a class="nav-link d-flex py-75" id="pill-bank" data-toggle="pill" href="#vertical-bank" aria-expanded="false">

@@ -6,7 +6,7 @@
       <div class="card">
           <div class="card-body">
               <h4 class="card-title"> Data Transaksi
-                <div class="row">
+                <div class="row mt-2">
                       <div class="col-4">
                           <select name="user_id" id="user_id" class="form-control">
                               <option value="all">--Semua Transaksi--</option>
@@ -38,7 +38,7 @@
                           @foreach ($transaksi as $key => $item)
                           <tr>
                               <td>{{$key+1}}</td>
-                              <td>{{carbon\carbon::parse($item->tgl_transaksi)->format('d-m-y')}}</td>
+                              <td>{{carbon\carbon::parse($item->tgl_transaksi)->format('d-m-Y')}}</td>
                               <td>{{$item->customer}}</td>
                               <td>
                                   @if ($item->status_order == 'Done')
