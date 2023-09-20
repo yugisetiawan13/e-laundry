@@ -193,7 +193,7 @@
 
                     {{-- Menu Karyawan --}}
                     @elseif(auth::user()->auth == "Karyawan")
-                      <li class=" nav-item"><a href="#"><i class="feather icon-layers"></i><span class="menu-title" data-i18n="User">Data Transaksi</span></a>
+                      <li class=" nav-item"><a href="#"><i class="feather icon-layers"></i><span class="menu-title" data-i18n="User">Orderan</span></a>
                           <ul class="menu-content">
                               <li class="nav-item {{ (request()->is('pelayanan')) ? 'active' : '' }}">
                                 <a href="{{route('pelayanan.index')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">Order Masuk</span></a>
@@ -206,7 +206,7 @@
                               </li>
                           </ul>
                       </li>
-                      <li class="nav-item"><a href="{{url('/laporan')}}"><i class="feather icon-file-text"></i><span class="menu-title" data-i18n="Dashboard">Laporan</span></a>
+                      <li class="nav-item"><a href="{{url('/laporan')}}"><i class="feather icon-file-text"></i><span class="menu-title" data-i18n="Dashboard">Transaksi</span></a>
                       </li>
                       <li class="nav-item"><a href="{{url('/')}}" target="_blank"><i class="feather icon-square"></i><span class="menu-title" data-i18n="Dashboard">Ke Halaman Utama</span></a>
                       </li>

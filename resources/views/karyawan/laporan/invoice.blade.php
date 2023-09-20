@@ -65,10 +65,10 @@
             </div>
             <div class="col-md-12">
                 <div class="pull-left m-t-10">
-                    <h6 style="font-weight:bold">Metode Pembayaran :</h6>
+                    <h6 style="font-weight:bold">Metode Pembayaran:</h6>
                     <ol>
                       @foreach ($bank as $banks)
-                        <li style="color: white"> {{$banks->nama_bank}} <br> {{$banks->no_rekening}} a/n {{$banks->nama_pemilik}}</li>
+                        <li style="color: rgb(0, 0, 0)"> {{$banks->nama_bank}} <br> {{$banks->no_rekening}} a/n {{$banks->nama_pemilik}}</li>
                       @endforeach
                     </ol>
                 </div>
